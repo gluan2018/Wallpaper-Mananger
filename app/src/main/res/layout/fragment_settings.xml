@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:overScrollMode="never">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_default"
+        android:layout_marginTop="@dimen/margin_top_title"
+        android:text="@string/settings"
+        android:textSize="@dimen/title_h0"
+        android:textStyle="bold" />
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/margin_default">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true"
+            android:clipToPadding="false"
+            android:orientation="vertical"
+            android:paddingVertical="@dimen/margin_32">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/title_basic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_default"
+                android:text="@string/basic"
+                android:textSize="@dimen/title_h3"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:viewBindingIgnore="false" />
+
+            <br.com.yuki.wallpaper.manager.util.custom.view.button.SettingButton
+                android:id="@+id/shuffle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:isCheckable="true"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/title_basic"
+                app:subtitle="@string/shuffle_album_details"
+                app:title="@string/shuffle_album" />
+
+            <br.com.yuki.wallpaper.manager.util.custom.view.button.SettingButton
+                android:id="@+id/darken_wallpaper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/shuffle"
+                app:subtitle="@string/darken_wallpaper"
+                app:title="@string/darken_wallpaper"
+                tools:subtitle="53%" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layout_darken"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin_default"
+                android:visibility="gone"
+                app:layout_constraintTop_toBottomOf="@id/darken_wallpaper"
+                tools:visibility="visible">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/card_darken"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    app:layout_constraintDimensionRatio="3:1"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:strokeWidth="0dp">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        app:srcCompat="@drawable/aegis" />
+
+                    <View
+                        android:id="@+id/darken_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/black"
+                        tools:alpha="0.5" />
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <androidx.appcompat.widget.AppCompatSeekBar
+                    android:id="@+id/darken_seek"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_default"
+                    android:max="255"
+                    android:min="0"
+                    app:layout_constraintTop_toBottomOf="@id/card_darken" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <br.com.yuki.wallpaper.manager.util.custom.view.button.SettingButton
+                android:id="@+id/double_tapping"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:isCheckable="true"
+                app:layout_constraintTop_toBottomOf="@id/layout_darken"
+                app:subtitle="@string/double_click_details"
+                app:title="@string/double_click" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/title_alarm_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_default"
+                android:layout_marginTop="@dimen/margin_32"
+                android:text="@string/alarm_and_time"
+                android:textSize="@dimen/title_h3"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/double_tapping" />
+
+            <br.com.yuki.wallpaper.manager.util.custom.view.button.SettingButton
+                android:id="@+id/time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/title_alarm_time"
+                app:title="@string/time"
+                tools:subtitle="30 min" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/title_lockscreen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_default"
+                android:layout_marginTop="@dimen/margin_32"
+                android:text="@string/lockscreen"
+                android:textSize="@dimen/title_h3"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/time"
+                tools:viewBindingIgnore="false" />
+
+            <br.com.yuki.wallpaper.manager.util.custom.view.button.SettingButton
+                android:id="@+id/change_when_lock"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:isCheckable="true"
+                app:layout_constraintTop_toBottomOf="@id/title_lockscreen"
+                app:subtitle="@string/change_when_lock"
+                app:title="@string/change_when_lock" />
+
+            <br.com.yuki.wallpaper.manager.util.custom.view.button.SettingButton
+                android:id="@+id/lockscreen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/change_when_lock"
+                app:subtitle="@string/lockscreen"
+                app:title="@string/lockscreen" />
+
+            <RadioGroup
+                android:id="@+id/lockscreen_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin_default"
+                android:visibility="gone"
+                app:layout_constraintTop_toBottomOf="@id/lockscreen"
+                tools:visibility="visible">
+
+                <com.google.android.material.radiobutton.MaterialRadioButton
+                    android:id="@+id/lockscreen_none"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/none_image" />
+
+                <com.google.android.material.radiobutton.MaterialRadioButton
+                    android:id="@+id/lockscreen_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/static_image" />
+
+            </RadioGroup>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

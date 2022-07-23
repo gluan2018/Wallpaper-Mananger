@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_56"
+        app:cardCornerRadius="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:strokeWidth="0dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="@dimen/margin_32"
+            android:layout_marginVertical="@dimen/margin_default">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/time_picker_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/enter_time"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:textAllCaps="true" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/time_picker_hour"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_16"
+                app:boxBackgroundMode="outline"
+                app:boxStrokeColor="@color/color_input"
+                app:helperText="@string/hour_uppercase"
+                app:hintEnabled="false"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/time_picker_title">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/time_picker_hour_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:digits="0123456789"
+                    android:gravity="center"
+                    android:inputType="numberDecimal"
+                    android:maxLength="2" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/time_picker_divider"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="@dimen/margin_minimal"
+                android:text="@string/two_point"
+                android:textSize="@dimen/title_h0"
+                android:textStyle="bold"
+                android:translationY="-14dp"
+                app:layout_constraintBottom_toBottomOf="@id/time_picker_hour"
+                app:layout_constraintStart_toEndOf="@id/time_picker_hour"
+                app:layout_constraintTop_toTopOf="@id/time_picker_hour"
+                tools:viewBindingIgnore="false" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/time_picker_minute"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_16"
+                app:boxBackgroundMode="outline"
+                app:boxStrokeColor="@color/color_input"
+                app:helperText="@string/minute_uppercase"
+                app:hintEnabled="false"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/time_picker_divider"
+                app:layout_constraintTop_toBottomOf="@id/time_picker_title">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/time_picker_minute_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:digits="0123456789"
+                    android:gravity="center"
+                    android:inputType="numberDecimal"
+                    android:maxLength="2" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/time_picker_cancel"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginEnd="@dimen/margin_16"
+                android:text="@string/cancel"
+                android:textColor="?attr/colorOnPrimary"
+                android:textSize="@dimen/subtitle_h3"
+                app:layout_constraintBottom_toBottomOf="@id/time_picker_apply_change"
+                app:layout_constraintEnd_toStartOf="@id/time_picker_apply_change"
+                app:layout_constraintTop_toTopOf="@id/time_picker_apply_change" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/time_picker_apply_change"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_minimal"
+                android:text="@string/ok"
+                android:textColor="?attr/colorOnPrimary"
+                android:textSize="@dimen/subtitle_h3"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/time_picker_minute" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/CurrentImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:foreground="#77AAAAAA"
+        tools:src="@drawable/aegis" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/container_wallpaper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/CardImage"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginHorizontal="40dp"
+            app:cardCornerRadius="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="16:9"
+            app:layout_constraintEnd_toStartOf="@id/ListImages"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <br.com.yuki.wallpaper.manager.util.custom.view.image.TransformImageView
+                android:id="@+id/ScalableImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="matrix"
+                tools:src="@drawable/aegis" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/ListImages"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="32dp"
+            android:clipToPadding="false"
+            android:orientation="vertical"
+            android:paddingVertical="50dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintEnd_toStartOf="@id/ContainerBottom"
+            tools:listitem="@layout/card_image" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/ContainerBottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_default"
+            android:orientation="vertical"
+            app:divider="@drawable/divider"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:showDividers="middle">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/addImage"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:autoSizeTextType="uniform"
+                android:background="@drawable/background_shape_gray"
+                android:padding="@dimen/margin_16"
+                app:srcCompat="@drawable/add_icon"
+                app:tint="@color/seed" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/saveImage"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:background="@drawable/background_shape_gray"
+                android:padding="@dimen/margin_16"
+                app:srcCompat="@drawable/icon_check"
+                app:tint="@color/seed" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/deleteImage"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:background="@drawable/background_shape_gray"
+                android:padding="@dimen/margin_16"
+                app:srcCompat="@drawable/icon_delete_forever"
+                app:tint="@color/error" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

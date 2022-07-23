@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:bottom="4dp"
+        android:end="4dp"
+        android:start="4dp"
+        android:top="4dp">
+        <shape>
+            <corners android:radius="10dp" />
+            <solid android:color="?attr/colorPrimaryContainer" />
+        </shape>
+    </item>
+    <item
+        android:bottom="4dp"
+        android:drawable="@drawable/ripple_app"
+        android:end="4dp"
+        android:start="4dp"
+        android:top="4dp" />
+</layer-list>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground"
+    android:padding="@dimen/margin_default">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card_image_card_album"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintDimensionRatio="16:9"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:viewBindingIgnore="false">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ImageAlbum"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cropToPadding="true"
+            android:scaleType="centerCrop"
+            tools:scaleType="centerCrop"
+            tools:src="@sample/drawable" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/NameAlbum"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:boxBackgroundMode="none"
+        app:hintEnabled="false"
+        app:layout_constraintEnd_toEndOf="@id/card_image_card_album"
+        app:layout_constraintStart_toStartOf="@id/card_image_card_album"
+        app:layout_constraintTop_toBottomOf="@id/card_image_card_album">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/current_name_album"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionDone"
+            android:inputType="textPersonName"
+            android:maxLines="1"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:text="Album name" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.divider.MaterialDivider
+        android:id="@+id/divider_card_album"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        app:layout_constraintTop_toBottomOf="@id/NameAlbum" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/delete_card_album"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="@dimen/margin_default"
+        android:layout_marginEnd="@dimen/margin_minimal"
+        android:background="@drawable/background_color_primary_container_with_selected"
+        android:paddingVertical="@dimen/margin_16"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/apply_card_album"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/divider_card_album"
+        app:srcCompat="@drawable/icon_delete_forever"
+        app:tint="?attr/colorOnPrimaryContainer" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/apply_card_album"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="@dimen/margin_minimal"
+        android:layout_marginTop="@dimen/margin_default"
+        android:background="@drawable/background_color_primary_container_with_selected"
+        android:paddingVertical="@dimen/margin_16"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/delete_card_album"
+        app:layout_constraintTop_toBottomOf="@id/divider_card_album"
+        app:srcCompat="@drawable/icon_check"
+        app:tint="?attr/colorOnPrimaryContainer" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

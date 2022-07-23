@@ -1,0 +1,68 @@
+<resources>
+    <string name="app_name">Wallpaper Manager</string>
+
+    <string name="add_image_or_folder">Adicionar imagem ou pasta</string>
+    <string name="home">Home</string>
+    <string name="album">Álbum</string>
+    <string name="apply_changes">Configurações salvas</string>
+    <string name="change">Trocar</string>
+    <string name="save">Salvar</string>
+    <string name="retry">Tentar novamente</string>
+    <string name="loading">Carregando</string>
+
+    <string name="ok">OK</string>
+
+    <string name="error_generic">Não foi possível completar a ação</string>
+
+    <string name="album_error_add">Não foi possível adicionar o álbum</string>
+    <string name="album_error_update">Não foi possível atualizar o álbum</string>
+    <string name="album_error_delete">Não foi possível deletar o álbum</string>
+
+    <string name="album_not_found">Álbum não encontrado</string>
+    <string name="time">Tempo</string>
+    <string name="alarm_details">Alarme detalhes</string>
+
+    <string name="darken_wallpaper">Escurecer o papel de parede</string>
+    <string name="alarm">Alarme</string>
+    <string name="select_album">Selecione o álbum</string>
+    <string name="empty" />
+    <string name="add_alarm">Adicionar alarme</string>
+    <string name="settings">Configurações</string>
+    <string name="shuffle_album">Emparalhar álbum</string>
+    <string name="shuffle_album_details">Ordene as imagens aleatoriamente</string>
+    <string name="double_click">Clique duplo</string>
+    <string name="double_click_details">Clique duas vezes para mudar a imagem</string>
+    <string name="hour_uppercase">Hora</string>
+    <string name="minute_uppercase">Minuto</string>
+    <string name="alarm_error">Alarme não carregado</string>
+    <string name="enable_app_details">Cliqui aqui para habilitar o papel de parede</string>
+    <string name="current_album">Álbum atual</string>
+    <string name="default_album">Não há álbum definido</string>
+    <string name="user_default_album">Papel de parede atual</string>
+    <string name="basic">Básico</string>
+    <string name="alarm_and_time">Alarme e tempo</string>
+    <string name="lockscreen">Tela de bloqueio</string>
+    <string name="change_when_lock">Mudar ao bloquear</string>
+    <string name="enter_time">Insira o tempo</string>
+    <string name="two_point">:</string>
+    <string name="cancel">Cancelar</string>
+    <string name="help">Ajuda</string>
+    <string name="delete_image">Deletar</string>
+    <string name="add_image">Adicionar imagem</string>
+    <string name="delete">Deletar</string>
+    <string name="none_image">Normal</string>
+    <string name="static_image">Imagem estática</string>
+
+    <string name="progress_value">Loading %d of %d</string>
+
+    <array name="week_days">
+        <item>D</item>
+        <item>S</item>
+        <item>T</item>
+        <item>Q</item>
+        <item>Q</item>
+        <item>S</item>
+        <item>S</item>
+    </array>
+
+</resources>

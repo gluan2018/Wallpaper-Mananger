@@ -1,0 +1,18 @@
+[
+  {
+    "title": "Como funciona o álbum?",
+    "subtitle": "Você pode criar vários álbuns, cada álbum pode ter um conjunto de várias imagens com suas próprias configurações.\n\nTambém é possível definir qual álbum será exibido em um determinado momento.\n\nConsulte também \"O que são alarmes?\" para entender melhor o funcionamento dos alarmes"
+  },
+  {
+    "title": "Como funcionam as imagens?",
+    "subtitle": "Você pode definir a posição e o tamanho da imagem para quando o telefone estiver em pé ou deitado, essas configurações são aplicadas apenas à imagem selecionada, não interferindo nas outras."
+  },
+  {
+    "title": "O que são alarmes?",
+    "subtitle": "Servem para mudar o álbum atual para o novo selecionado, na hora selecionada.\n\nExemplo: Às 06:00 é o álbum x, entretanto quando chegar às 08:00 será alterado para o álbum y."
+  },
+  {
+    "title": "Como ativar o aplicativo",
+    "subtitle": "1.Crie um álbum.\n2. Clique em selecionar ao lado de excluir na tela de listagem de álbuns.\n3. Adicione as imagens.\n4. Volte para a tela inicial, clique em \"Clique aqui para ativar o papel de parede\"\n5. Clique em \"Definir plano de fundo\".\n6. E o aplicativo está ativo :)"
+  }
+]

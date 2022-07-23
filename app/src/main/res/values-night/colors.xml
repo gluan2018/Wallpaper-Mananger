@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--  Color error -> MaterialColors.getColor(view, R.attr.colorOnError)  -->
+    <color name="md_theme_primary">#4FD8EB</color>
+    <color name="md_theme_onPrimary">#00363D</color>
+    <color name="md_theme_primaryContainer">#004F59</color>
+    <color name="md_theme_onPrimaryContainer">#90F1FF</color>
+
+    <color name="md_theme_secondary">#FFB3A9</color>
+    <color name="md_theme_onSecondary">#680004</color>
+    <color name="md_theme_secondaryContainer">#930009</color>
+    <color name="md_theme_onSecondaryContainer">#FFDAD4</color>
+
+    <color name="md_theme_tertiary">#FFB3A9</color>
+    <color name="md_theme_onTertiary">#680004</color>
+    <color name="md_theme_tertiaryContainer">#930009</color>
+    <color name="md_theme_onTertiaryContainer">#FFDAD4</color>
+
+    <color name="md_theme_error">#FFB4A9</color>
+    <color name="md_theme_errorContainer">#930006</color>
+    <color name="md_theme_onError">#680003</color>
+    <color name="md_theme_onErrorContainer">#FFDAD4</color>
+
+    <color name="md_theme_background">#191C1D</color>
+    <color name="md_theme_onBackground">#E0E3E3</color>
+
+    <color name="md_theme_surface">#191C1D</color>
+    <color name="md_theme_onSurface">#E0E3E3</color>
+    <color name="md_theme_surfaceVariant">#3F484A</color>
+    <color name="md_theme_onSurfaceVariant">#BFC8CA</color>
+
+    <color name="md_theme_outline">#899294</color>
+    <color name="md_theme_inverseOnSurface">#191C1D</color>
+    <color name="md_theme_inverseSurface">#E0E3E3</color>
+    <color name="md_theme_primaryInverse">#006874</color>
+
+</resources>

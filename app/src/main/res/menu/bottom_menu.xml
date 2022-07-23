@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/HomeMenu"
+        android:icon="@drawable/icon_home"
+        android:title="@string/home" />
+
+    <item
+        android:id="@+id/AlbumMenu"
+        android:icon="@drawable/icon_widgets"
+        android:title="@string/album" />
+
+<!--    <item-->
+<!--        android:id="@+id/AlarmMenu"-->
+<!--        android:icon="@drawable/icon_alarm"-->
+<!--        android:title="@string/alarm" />-->
+
+    <item
+        android:id="@+id/SettingsMenu"
+        android:icon="@drawable/icon_settings"
+        android:title="@string/settings" />
+
+</menu>

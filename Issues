@@ -1,0 +1,24 @@
+Fazer
+	Alarme -> pesquisar e implementar
+	Imagem do wallpaper -> soft reload config
+
+Bug e melhorias
+	Mudar as configurações de embaralhar  -> soft reload config
+	Escurer o papel de parede -> soft reload config
+	Clique duplo -> soft reload 
+	Timer -> soft reload (está sem por alguma razão)
+	Mudar ao bloquear -> soft reload
+	Tela de bloqueio -> não muda para o normal quando desbloqueado
+	Ordenação das imagens -> reload config se a embaralhar tiver acionado
+	Mudança na imagem -> recarregar as configurações da imagem se ela tiver em cache
+	Tirar animação quando a tela gira
+	Melhorar a transição entre as imagens
+	Arrumar quando rotaciona o celular com um app aberto
+	Arrumar quando volta da tela de editar a imagem que atualiza para outra
+	Lingua errado na ajuda
+	Remover o foco para renomear o nome se o teclado for fechado
+	Verificar se tem mensagem para todos os erros
+	Colocar um placeholder em um album vazio
+	Verificar o uso de memória nos dois processo (aparentemente estão bons)
+	Arrumar leak no AlbumFragment
+	

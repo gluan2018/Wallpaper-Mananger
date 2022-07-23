@@ -1,0 +1,97 @@
+{
+  "project_info": {
+    "project_number": "74271479307",
+    "project_id": "control-yuki-makoto",
+    "storage_bucket": "control-yuki-makoto.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:74271479307:android:7c032daff8a8c0bfb3190e",
+        "android_client_info": {
+          "package_name": "br.com.yuki.wallpaper.manager.free.debug"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "74271479307-n25r06lbvcflqntd0o5foridqo09024k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPyAj-TVwKPUJ1W_m1dhutqRlAPzpoK3M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "74271479307-n25r06lbvcflqntd0o5foridqo09024k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:74271479307:android:49f4dfb3038732a7b3190e",
+        "android_client_info": {
+          "package_name": "br.com.yuki.wallpaper.manager.debug"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "74271479307-n25r06lbvcflqntd0o5foridqo09024k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPyAj-TVwKPUJ1W_m1dhutqRlAPzpoK3M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "74271479307-n25r06lbvcflqntd0o5foridqo09024k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:74271479307:android:68686cae55092856b3190e",
+        "android_client_info": {
+          "package_name": "br.com.yuki.wallpaper.manager.dev"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "74271479307-n25r06lbvcflqntd0o5foridqo09024k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPyAj-TVwKPUJ1W_m1dhutqRlAPzpoK3M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "74271479307-n25r06lbvcflqntd0o5foridqo09024k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

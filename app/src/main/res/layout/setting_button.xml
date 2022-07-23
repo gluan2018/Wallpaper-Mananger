@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground"
+    android:padding="@dimen/margin_default">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/setting_button_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:textSize="@dimen/title_h2"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@id/setting_button_divider"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Title button" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/setting_button_subtitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_minimal"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:minLines="1"
+        android:textSize="@dimen/subtitle_h2"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@id/setting_button_divider"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/setting_button_title"
+        tools:text="Subtitle" />
+
+    <com.google.android.material.divider.MaterialDivider
+        android:id="@+id/setting_button_divider"
+        android:layout_width="33dp"
+        android:layout_height="0dp"
+        android:layout_marginVertical="@dimen/margin_minimal"
+        android:visibility="visible"
+        app:dividerInsetEnd="@dimen/margin_16"
+        app:dividerInsetStart="@dimen/margin_16"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/setting_button_switch"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:viewBindingIgnore="true" />
+
+    <com.github.angads25.toggle.widget.LabeledSwitch
+        android:id="@+id/setting_button_switch"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:on="false"
+        app:textOff="@string/empty"
+        app:textOn="@string/empty" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

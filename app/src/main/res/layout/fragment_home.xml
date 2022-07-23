@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/image_current_album"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:foreground="#AA000000"
+        android:scaleType="centerCrop"
+        tools:src="@sample/aegis.png" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/title_current_album"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_default"
+        android:layout_marginTop="@dimen/margin_top_title"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/title_h0"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Current album" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/subtitle_current_album"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin_default"
+        android:fontFamily="@font/noto_sans"
+        android:minLines="1"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/subtitle_h1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/title_current_album"
+        app:layout_constraintTop_toBottomOf="@id/title_current_album"
+        tools:text="Current album" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/help_current_album"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_margin="@dimen/margin_default"
+        android:padding="@dimen/margin_10"
+        android:background="@drawable/ripple_app_radius_28"
+        app:layout_constraintBottom_toTopOf="@id/enable_app_current_album"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/icon_help_outline"
+        app:tint="@android:color/white" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/enable_app_current_album"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_color_primary_with_selected"
+        android:padding="@dimen/margin_default"
+        android:text="@string/enable_app_details"
+        android:textColor="?attr/colorOnPrimary"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

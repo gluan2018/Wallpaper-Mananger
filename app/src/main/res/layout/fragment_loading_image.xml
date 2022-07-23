@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#77000000">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/info_add"
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:layout_marginBottom="@dimen/margin_default"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toTopOf="@id/info_progress"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1"
+        tools:listitem="@layout/card_info_add" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/info_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_minimal"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/progress_loading"
+        app:layout_constraintStart_toStartOf="@id/progress_loading"
+        tools:text="Loading 1 of 10" />
+
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:id="@+id/progress_loading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_default"
+        android:indeterminate="false"
+        android:max="100"
+        android:min="0"
+        app:indicatorColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:trackColor="#777777"
+        tools:progress="23" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

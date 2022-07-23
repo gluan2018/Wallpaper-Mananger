@@ -1,0 +1,18 @@
+[
+  {
+    "title": "How does the album work?",
+    "subtitle": "You can create multiple albums, each album can have a set of multiple images with its own settings.\n\nIt is also possible to define which album will be shown at a certain time.\n\nSee also \"What are alarms?\" to better understand the operation of alarms"
+  },
+  {
+    "title": "How do images work?",
+    "subtitle": "You can set the image position and size for when the phone is standing or lying down, these settings are only applied to the selected image, not interfering with others."
+  },
+  {
+    "title": "What are alarms?",
+    "subtitle": "They serve to change the current album to the new one selected, at the selected time.\n\nExample: At 6:00 am is album x, however when it arrives at 08:00 it will be changed to album y."
+  },
+  {
+    "title": "How to activate the app",
+    "subtitle": "1.Create an album.\n2. Click on the select next to delete on the album listing screen.\n3. Add the images.\n4. Go back to the home screen click on \"Click here to enable wallpaper\"\n5. Click \"Set Background\".\n6. And the app is active :)"
+  }
+]
