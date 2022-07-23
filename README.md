@@ -1,18 +1,22 @@
 # Wallpaper Manager
 
 ## Defina seu wallpaper
+
 Permite que vc altere
 
 ### Conteudo
+
 <!--ts-->
-    * [Pré requisitos](#prerequisitos)
-    * [Instalação](#instalacao)
-    * [Testes](#testes)
-    * [Features](#features)
-        * [1.0.0](#instalacao)
-        * [2.0.0](#instalacao)
+
+* [Pré requisitos](#prerequisitos)
+* [Instalação](#instalacao)
+* [Testes](#testes)
+* [Features](#features)
+    * [1.0.0](#instalacao)
+    * [2.0.0](#instalacao)
     * [Documentação](#tecnologias)
-    * [Tecnologias](#tecnologias)
+* [Tecnologias](#tecnologias)
+
 <!--te-->
 
 ### Features 1.0.0
@@ -24,8 +28,6 @@ Permite que vc altere
 - [ ] Criar e controlar os alarms
 - [x] Suporte ao Material 3
 - [x] Imagem estática para tela de bloqueio
-
-
 
 ### Features 2.0.0
 
